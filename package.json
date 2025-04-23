@@ -1,0 +1,38 @@
+{
+  "name": "1-unit-test-poc",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vite",
+    "test": "vitest --ui --watch",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "installTesting": "npm install -D concurrency vitest jsdom @testing-library/jest-dom @testing-library/react @testing-library/user-event",
+    "installTesting2": "echo 'install after installTesting' & npm install -D vitest/ui "
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "@vitest/ui": "^3.1.2",
+    "concurrency": "^0.1.4",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "jsdom": "^26.1.0",
+    "vite": "^6.3.1",
+    "vitest": "^3.1.2"
+  }
+}
