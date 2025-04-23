@@ -12,6 +12,24 @@ export default defineConfig({
     environment:"jsdom",
     setupFiles: './src/test/_setupTest.js',
     css: true,
+    include: ["**/*.{test,spec}.{js,ts,jsx,tsx}"], // important
+  },
+  server: {
+    watch: {
+      usePolling: true,
+      interval: 100, // ms
+    },
+    // hmr: {
+    //   overlay: false, // Disable the overlay
+    // },
+    optimizeDeps: {
+      force: true,
+    }    
+  },  
+})
+
+
+
     // watch: true,
     // isolate: true, // <-- this helps with stale state
     // forceRerunTriggers: ['**/src/**/*.{js,jsx,ts,tsx}'], // triggers full rerun
@@ -28,5 +46,3 @@ export default defineConfig({
     // },
     // clearMocks: true,
     // restoreMocks: true,     
-  },
-})

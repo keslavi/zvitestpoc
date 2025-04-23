@@ -1,6 +1,10 @@
-import "@testing-library/react";
-//import "@testing-library/jest-dom";
+//import "@testing-library/react";
+import "@testing-library/jest-dom";
 //import "@testing-library/user-event"; //maybe add here? 
+
+
+// global.render=render;
+// global.screen=screen;
 
 /*
  vitest setup outlined here: https://www.youtube.com/watch?v=G-4zgIPsjkU
@@ -35,6 +39,7 @@ export default defineConfig({
 
 
 import { afterEach } from "vitest";
+import { render } from "@testing-library/react";
 //import { cleanup } from "@testing-library/react";
 
 afterEach(()=>{
